@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="59dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="16dp"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.046"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.003"
+                card_view:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="aaâ"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toTopOf="@+id/tv_status"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toEndOf="@+id/img_avatar"
+                card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="27dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="aaaa"
+                card_view:layout_constraintBottom_toTopOf="@+id/tv_status"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.018"
+                card_view:layout_constraintStart_toEndOf="@+id/img_avatar"
+                card_view:layout_constraintTop_toBottomOf="@+id/tv_name"
+                card_view:layout_constraintVertical_bias="0.243" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="TextView"
+                card_view:layout_constraintBottom_toTopOf="@+id/img_image"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/img_avatar"
+                card_view:layout_constraintTop_toBottomOf="@+id/img_avatar"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/img_image"
+                android:layout_width="265dp"
+                android:layout_height="127dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="312dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toEndOf="@+id/img_avatar"
+                card_view:layout_constraintTop_toBottomOf="@+id/tv_status"
+                card_view:srcCompat="@drawable/rectangle_copy" />
+
+            <CheckBox
+                android:id="@+id/cb_like"
+                android:layout_width="42dp"
+                android:layout_height="39dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/ic_favorite_border_black_24dp"
+                android:button="@null"
+                android:checked="false"
+                card_view:layout_constraintEnd_toStartOf="@+id/cb_cmt"
+                card_view:layout_constraintStart_toStartOf="@+id/img_image"
+                card_view:layout_constraintTop_toBottomOf="@+id/img_image" />
+
+            <CheckBox
+                android:id="@+id/cb_cmt"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/ic_003_comment_1"
+                android:button="@null"
+                android:checked="false"
+                card_view:layout_constraintEnd_toStartOf="@+id/tv_money"
+                card_view:layout_constraintStart_toEndOf="@+id/cb_like"
+                card_view:layout_constraintTop_toBottomOf="@+id/img_image" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="71dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp"
+                android:text="cccccc"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                card_view:layout_constraintEnd_toEndOf="@+id/img_image"
+                card_view:layout_constraintHorizontal_bias="0.888"
+                card_view:layout_constraintStart_toEndOf="@+id/cb_cmt"
+                card_view:layout_constraintTop_toBottomOf="@+id/img_image" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
